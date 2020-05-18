@@ -14,6 +14,8 @@
 		7E00A19924723EA500C1AA2B /* BingoYa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E00A19724723EA500C1AA2B /* BingoYa.xcdatamodeld */; };
 		7E00A19B24723EA600C1AA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E00A19A24723EA600C1AA2B /* Assets.xcassets */; };
 		7E00A19E24723EA600C1AA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E00A19C24723EA600C1AA2B /* LaunchScreen.storyboard */; };
+		89E4301F24724A7E006CE21E /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E4301E24724A7E006CE21E /* Onboarding.storyboard */; };
+		89E4302124724B2A006CE21E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4302024724B2A006CE21E /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7E00A19A24723EA600C1AA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E00A19D24723EA600C1AA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E00A19F24723EA600C1AA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89E4301E24724A7E006CE21E /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		89E4302024724B2A006CE21E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				7E00A18E24723EA500C1AA2B /* AppDelegate.swift */,
 				7E00A19024723EA500C1AA2B /* SceneDelegate.swift */,
 				7E00A19224723EA500C1AA2B /* ViewController.swift */,
+				89E4302024724B2A006CE21E /* OnboardingViewController.swift */,
 				7E00A19424723EA500C1AA2B /* Main.storyboard */,
+				89E4301E24724A7E006CE21E /* Onboarding.storyboard */,
 				7E00A19A24723EA600C1AA2B /* Assets.xcassets */,
 				7E00A19C24723EA600C1AA2B /* LaunchScreen.storyboard */,
 				7E00A19F24723EA600C1AA2B /* Info.plist */,
@@ -131,6 +137,7 @@
 				7E00A19E24723EA600C1AA2B /* LaunchScreen.storyboard in Resources */,
 				7E00A19B24723EA600C1AA2B /* Assets.xcassets in Resources */,
 				7E00A19624723EA500C1AA2B /* Main.storyboard in Resources */,
+				89E4301F24724A7E006CE21E /* Onboarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +150,7 @@
 			files = (
 				7E00A19324723EA500C1AA2B /* ViewController.swift in Sources */,
 				7E00A19924723EA500C1AA2B /* BingoYa.xcdatamodeld in Sources */,
+				89E4302124724B2A006CE21E /* OnboardingViewController.swift in Sources */,
 				7E00A18F24723EA500C1AA2B /* AppDelegate.swift in Sources */,
 				7E00A19124723EA500C1AA2B /* SceneDelegate.swift in Sources */,
 			);
@@ -298,7 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.ada.BingoYa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.ada.BingoYa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
