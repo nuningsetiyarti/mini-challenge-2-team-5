@@ -60,5 +60,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This application uses photo library to upload image for done activity</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This application need to use photo library to save the screenshot</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This application uses camera to take a picture for done activity</string>
 </dict>
 </plist>
