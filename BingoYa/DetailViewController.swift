@@ -41,7 +41,7 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func saveBingo(_ sender: UIButton) {
-        takeScreenShot(of: self.view)
+        takeScreenShot(of: bingoBoardCollectionView)
     }
     
 }
@@ -101,7 +101,7 @@ extension DetailViewController {
     }
     
     func takeScreenShot(of view: UIView) {
-        UIGraphicsBeginImageContext(CGSize(width: view.bounds.width, height: view.bounds.height))
+        UIGraphicsBeginImageContextWithOptions(CGSize(width: view.bounds.width, height: view.bounds.height), false, 2)
         view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let screenshot = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
