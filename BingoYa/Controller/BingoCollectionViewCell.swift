@@ -11,5 +11,6 @@ import UIKit
 class BingoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var taskLabel: UILabel!
+    @IBOutlet weak var taskImageView: UIImageView!
     
 }

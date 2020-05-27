@@ -16,6 +16,7 @@
 		7E00A19E24723EA600C1AA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E00A19C24723EA600C1AA2B /* LaunchScreen.storyboard */; };
 		7E6BEABB247E1AA1009A7D51 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6BEABA247E1AA1009A7D51 /* Detail.storyboard */; };
 		7E6BEABD247E1B4E009A7D51 /* ShareBingoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BEABC247E1B4E009A7D51 /* ShareBingoViewController.swift */; };
+		7E6BEAC5247E2FDF009A7D51 /* BingoTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BEAC4247E2FDF009A7D51 /* BingoTile.swift */; };
 		7EEEA9EF247CB4FA002FC55C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEA9EE247CB4FA002FC55C /* DetailViewController.swift */; };
 		7EEEA9F1247CCD42002FC55C /* TakeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEA9F0247CCD42002FC55C /* TakeImageViewController.swift */; };
 		7EEEA9F3247CD31B002FC55C /* BingoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEA9F2247CD31B002FC55C /* BingoCollectionViewCell.swift */; };
@@ -42,6 +43,7 @@
 		7E00A19F24723EA600C1AA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E6BEABA247E1AA1009A7D51 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		7E6BEABC247E1B4E009A7D51 /* ShareBingoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareBingoViewController.swift; sourceTree = "<group>"; };
+		7E6BEAC4247E2FDF009A7D51 /* BingoTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoTile.swift; sourceTree = "<group>"; };
 		7EEEA9EE247CB4FA002FC55C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7EEEA9F0247CCD42002FC55C /* TakeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeImageViewController.swift; sourceTree = "<group>"; };
 		7EEEA9F2247CD31B002FC55C /* BingoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 		897A752D247E0BDE00C05F78 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7E6BEAC4247E2FDF009A7D51 /* BingoTile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				7EEEA9EF247CB4FA002FC55C /* DetailViewController.swift in Sources */,
 				897A7521247DEBE800C05F78 /* MainCollectionViewController.swift in Sources */,
 				7E00A18F24723EA500C1AA2B /* AppDelegate.swift in Sources */,
+				7E6BEAC5247E2FDF009A7D51 /* BingoTile.swift in Sources */,
 				897A7529247DF91E00C05F78 /* DurationTableViewController.swift in Sources */,
 				7E6BEABD247E1B4E009A7D51 /* ShareBingoViewController.swift in Sources */,
 				7EEEA9F1247CCD42002FC55C /* TakeImageViewController.swift in Sources */,

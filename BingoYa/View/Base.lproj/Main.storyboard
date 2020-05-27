@@ -69,10 +69,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="871.20535714285711"/>
         </scene>
-        <!--CreateBoard-->
+        <!--Detail-->
         <scene sceneID="j3U-28-o0U">
             <objects>
-                <viewControllerPlaceholder storyboardName="CreateBoard" id="f75-mq-Qbc" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Detail" id="f75-mq-Qbc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MUu-wF-qET" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1849" y="871"/>

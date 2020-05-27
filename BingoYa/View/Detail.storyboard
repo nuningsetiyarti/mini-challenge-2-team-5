@@ -37,6 +37,9 @@
                                 <state key="normal" title="No">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="unfinishedTask:" destination="73l-TS-1gZ" eventType="touchUpInside" id="3bz-jG-Kb1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7U-xN-tGh">
                                 <rect key="frame" x="224" y="752" width="127" height="30"/>
@@ -46,6 +49,9 @@
                                 <state key="normal" title="Yes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="FTS-t8-uRg" kind="unwind" unwindAction="taskDone:" id="COH-m3-8bJ"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap the box to upload a picture" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEt-ms-IL0">
                                 <rect key="frame" x="77" y="229" width="260" height="22"/>
@@ -80,6 +86,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NS8-en-hOz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="FTS-t8-uRg" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3618.840579710145" y="137.94642857142856"/>
         </scene>
@@ -124,6 +131,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-GB-6aK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo0-Vs-g7e">
                                                     <rect key="frame" x="10" y="46.5" width="90" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -133,13 +143,18 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="vo0-Vs-g7e" firstAttribute="centerX" secondItem="GvI-FQ-pnL" secondAttribute="centerX" id="1bm-Op-8PY"/>
+                                                <constraint firstAttribute="trailing" secondItem="nXh-GB-6aK" secondAttribute="trailing" id="5Qa-54-0Li"/>
+                                                <constraint firstItem="nXh-GB-6aK" firstAttribute="leading" secondItem="GvI-FQ-pnL" secondAttribute="leading" id="BNX-fY-kf9"/>
                                                 <constraint firstItem="vo0-Vs-g7e" firstAttribute="leading" secondItem="GvI-FQ-pnL" secondAttribute="leading" constant="10" id="evY-c6-oMy"/>
+                                                <constraint firstItem="nXh-GB-6aK" firstAttribute="top" secondItem="GvI-FQ-pnL" secondAttribute="top" id="fce-v2-g55"/>
+                                                <constraint firstAttribute="bottom" secondItem="nXh-GB-6aK" secondAttribute="bottom" id="p95-fs-JeW"/>
                                                 <constraint firstAttribute="trailing" secondItem="vo0-Vs-g7e" secondAttribute="trailing" constant="10" id="pvo-DE-r1Q"/>
                                                 <constraint firstItem="vo0-Vs-g7e" firstAttribute="centerY" secondItem="GvI-FQ-pnL" secondAttribute="centerY" id="r3q-y4-WwW"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.92941176469999998" green="0.53725490200000003" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
+                                            <outlet property="taskImageView" destination="nXh-GB-6aK" id="Az0-uB-TuT"/>
                                             <outlet property="taskLabel" destination="vo0-Vs-g7e" id="eee-IV-ThQ"/>
                                         </connections>
                                     </collectionViewCell>
