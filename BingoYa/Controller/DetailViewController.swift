@@ -18,11 +18,11 @@ class DetailViewController: UIViewController {
         "Feed your pet",
         "Sort all clothes",
         "Pick your chores",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Do 30x push-ups",
+        "Watch all Harry Potter series",
+        "Clean the dishes",
+        "Plank for 1 minute",
+        "Do the laundry"
     ]
     
     override func viewDidLoad() {
@@ -36,6 +36,9 @@ class DetailViewController: UIViewController {
         if let destination = segue.destination as? UINavigationController {
             if let target = destination.topViewController as? TakeImageViewController {
                 target.taskTitle = sender as? String
+            }
+            if let target = destination.topViewController as? ShareBingoViewController {
+                target.screenshotImage = sender as? UIImage
             }
         }
     }
@@ -91,22 +94,13 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
 
 // MARK: Trigger screenshot and save it to library
 extension DetailViewController {
-    @objc func imageWasSaved(_ image: UIImage, error: Error?, context: UnsafeMutableRawPointer) {
-        if let error = error {
-            print(error.localizedDescription)
-            return
-        }
-        
-        UIApplication.shared.open(URL(string:"photos-redirect://")!)
-    }
-    
     func takeScreenShot(of view: UIView) {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: view.bounds.width, height: view.bounds.height), false, 2)
         view.layer.render(in: UIGraphicsGetCurrentContext()!)
         let screenshot = UIGraphicsGetImageFromCurrentImageContext()!
         UIGraphicsEndImageContext()
         
-        UIImageWriteToSavedPhotosAlbum(screenshot, self, #selector(imageWasSaved), nil)
+        performSegue(withIdentifier: "shareScreenshotSegue", sender: screenshot)
     }
 }
 

@@ -14,6 +14,8 @@
 		7E00A19924723EA500C1AA2B /* BingoYa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E00A19724723EA500C1AA2B /* BingoYa.xcdatamodeld */; };
 		7E00A19B24723EA600C1AA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E00A19A24723EA600C1AA2B /* Assets.xcassets */; };
 		7E00A19E24723EA600C1AA2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E00A19C24723EA600C1AA2B /* LaunchScreen.storyboard */; };
+		7E6BEABB247E1AA1009A7D51 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E6BEABA247E1AA1009A7D51 /* Detail.storyboard */; };
+		7E6BEABD247E1B4E009A7D51 /* ShareBingoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BEABC247E1B4E009A7D51 /* ShareBingoViewController.swift */; };
 		7EEEA9EF247CB4FA002FC55C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEA9EE247CB4FA002FC55C /* DetailViewController.swift */; };
 		7EEEA9F1247CCD42002FC55C /* TakeImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEA9F0247CCD42002FC55C /* TakeImageViewController.swift */; };
 		7EEEA9F3247CD31B002FC55C /* BingoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EEEA9F2247CD31B002FC55C /* BingoCollectionViewCell.swift */; };
@@ -38,6 +40,8 @@
 		7E00A19A24723EA600C1AA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E00A19D24723EA600C1AA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E00A19F24723EA600C1AA2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E6BEABA247E1AA1009A7D51 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		7E6BEABC247E1B4E009A7D51 /* ShareBingoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareBingoViewController.swift; sourceTree = "<group>"; };
 		7EEEA9EE247CB4FA002FC55C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		7EEEA9F0247CCD42002FC55C /* TakeImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeImageViewController.swift; sourceTree = "<group>"; };
 		7EEEA9F2247CD31B002FC55C /* BingoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingoCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 				89E4301E24724A7E006CE21E /* Onboarding.storyboard */,
 				897A7532247E107C00C05F78 /* CreateBoard.storyboard */,
 				897A7530247E106A00C05F78 /* Reward.storyboard */,
+				7E6BEABA247E1AA1009A7D51 /* Detail.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 				897A7524247DF90500C05F78 /* ColorTableViewController.swift */,
 				897A7526247DF91200C05F78 /* CategoryTableViewController.swift */,
 				897A7528247DF91E00C05F78 /* DurationTableViewController.swift */,
+				7E6BEABC247E1B4E009A7D51 /* ShareBingoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +198,7 @@
 				7E00A19E24723EA600C1AA2B /* LaunchScreen.storyboard in Resources */,
 				7E00A19B24723EA600C1AA2B /* Assets.xcassets in Resources */,
 				7E00A19624723EA500C1AA2B /* Main.storyboard in Resources */,
+				7E6BEABB247E1AA1009A7D51 /* Detail.storyboard in Resources */,
 				89E4301F24724A7E006CE21E /* Onboarding.storyboard in Resources */,
 				897A7533247E107C00C05F78 /* CreateBoard.storyboard in Resources */,
 			);
@@ -212,6 +219,7 @@
 				897A7521247DEBE800C05F78 /* MainCollectionViewController.swift in Sources */,
 				7E00A18F24723EA500C1AA2B /* AppDelegate.swift in Sources */,
 				897A7529247DF91E00C05F78 /* DurationTableViewController.swift in Sources */,
+				7E6BEABD247E1B4E009A7D51 /* ShareBingoViewController.swift in Sources */,
 				7EEEA9F1247CCD42002FC55C /* TakeImageViewController.swift in Sources */,
 				7EEEA9F3247CD31B002FC55C /* BingoCollectionViewCell.swift in Sources */,
 				897A7525247DF90500C05F78 /* ColorTableViewController.swift in Sources */,
