@@ -14,19 +14,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    // MARK: Setup Onboarding Page
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let launchedBefore = UserDefaults.standard.bool(forKey: "hasLaunched")
-        if !launchedBefore {
-            UserDefaults.standard.set(true, forKey: "hasLaunched")
-            let launchStoryboard = UIStoryboard(name: "Onboarding", bundle: nil)
-            let vc = launchStoryboard.instantiateViewController(identifier: "onboardingStoryboard")
-            present(vc, animated: true)
-        }
-    }
     
 }
 

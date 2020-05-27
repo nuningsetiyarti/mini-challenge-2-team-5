@@ -16,7 +16,6 @@ class OnboardingViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        setGradientBackground()
         setCustomButton(continueButton)
     }
     
@@ -37,7 +36,7 @@ class OnboardingViewController: UIViewController {
     
     // MARK: Setup Custom Button
     func setCustomButton(_ button: UIButton) {
-        button.layer.cornerRadius = 10.0
+        button.layer.cornerRadius = 15.0
     }
     
     @IBAction func continueButtonTapped(_ sender: Any) {

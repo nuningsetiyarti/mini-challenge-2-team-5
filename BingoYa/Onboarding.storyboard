@@ -15,6 +15,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="onboarding-background-blue" translatesAutoresizingMaskIntoConstraints="NO" id="Cc5-lh-7tn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-XR-MpS">
                                 <rect key="frame" x="20" y="396" width="374" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,20 +68,6 @@
                                     </imageView>
                                 </subviews>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiK-a5-dgv">
-                                <rect key="frame" x="50" y="762" width="314" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="btn-B1-j11"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
-                                <state key="normal" title="Continue">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="continueButtonTapped:" destination="70z-sc-lW2" eventType="touchUpInside" id="wsy-Pk-JWg"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Im1-Or-Bpk">
                                 <rect key="frame" x="20" y="514" width="374" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -104,12 +93,30 @@
                                     </label>
                                 </subviews>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiK-a5-dgv">
+                                <rect key="frame" x="50" y="762" width="314" height="50"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="btn-B1-j11"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonTapped:" destination="70z-sc-lW2" eventType="touchUpInside" id="wsy-Pk-JWg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZJH-Au-cf0" firstAttribute="bottom" secondItem="YiK-a5-dgv" secondAttribute="bottom" constant="50" id="0kb-Kt-mKs"/>
+                            <constraint firstItem="Cc5-lh-7tn" firstAttribute="top" secondItem="P0X-Su-U97" secondAttribute="top" id="7Ok-y1-p5d"/>
                             <constraint firstItem="ZJH-Au-cf0" firstAttribute="trailing" secondItem="YiK-a5-dgv" secondAttribute="trailing" constant="50" id="Ovt-9g-FdU"/>
                             <constraint firstItem="YiK-a5-dgv" firstAttribute="leading" secondItem="ZJH-Au-cf0" secondAttribute="leading" constant="50" id="pEl-v5-xNq"/>
+                            <constraint firstItem="Cc5-lh-7tn" firstAttribute="trailing" secondItem="P0X-Su-U97" secondAttribute="trailing" id="qDb-jd-rDE"/>
+                            <constraint firstItem="Cc5-lh-7tn" firstAttribute="leading" secondItem="P0X-Su-U97" secondAttribute="leading" id="qSw-1E-Nzz"/>
+                            <constraint firstAttribute="bottom" secondItem="Cc5-lh-7tn" secondAttribute="bottom" id="xHu-4g-2ys"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZJH-Au-cf0"/>
                     </view>
@@ -120,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQV-Ax-pbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="322" y="-275"/>
+            <point key="canvasLocation" x="321.73913043478262" y="-275.22321428571428"/>
         </scene>
         <!--Main-->
         <scene sceneID="xDu-Rc-40s">
@@ -135,6 +142,7 @@
     </scenes>
     <resources>
         <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
+        <image name="onboarding-background-blue" width="1024" height="1366"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="rectangle.split.3x3.fill" catalog="system" width="128" height="93"/>
     </resources>
