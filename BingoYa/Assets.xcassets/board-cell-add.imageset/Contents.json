@@ -1,12 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "bingoya-logo.png",
+      "filename" : "board-cell-add.pdf",
       "idiom" : "universal"
     }
   ],
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

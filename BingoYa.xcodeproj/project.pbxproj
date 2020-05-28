@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7E00A18F24723EA500C1AA2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E00A18E24723EA500C1AA2B /* AppDelegate.swift */; };
 		7E00A19124723EA500C1AA2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E00A19024723EA500C1AA2B /* SceneDelegate.swift */; };
-		7E00A19324723EA500C1AA2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E00A19224723EA500C1AA2B /* ViewController.swift */; };
 		7E00A19624723EA500C1AA2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E00A19424723EA500C1AA2B /* Main.storyboard */; };
 		7E00A19924723EA500C1AA2B /* BingoYa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7E00A19724723EA500C1AA2B /* BingoYa.xcdatamodeld */; };
 		7E00A19B24723EA600C1AA2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E00A19A24723EA600C1AA2B /* Assets.xcassets */; };
@@ -29,13 +28,17 @@
 		897A7533247E107C00C05F78 /* CreateBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897A7532247E107C00C05F78 /* CreateBoard.storyboard */; };
 		89E4301F24724A7E006CE21E /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E4301E24724A7E006CE21E /* Onboarding.storyboard */; };
 		89E4302124724B2A006CE21E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4302024724B2A006CE21E /* OnboardingViewController.swift */; };
+		89FAC065247F3EF400D1C269 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC064247F3EF400D1C269 /* MainViewController.swift */; };
+		89FAC067247F44F000D1C269 /* RewardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC066247F44F000D1C269 /* RewardTableViewController.swift */; };
+		89FAC069247F4BDC00D1C269 /* BoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC068247F4BDC00D1C269 /* BoardCollectionViewCell.swift */; };
+		89FAC06B247F4E3C00D1C269 /* BoardTIle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC06A247F4E3C00D1C269 /* BoardTIle.swift */; };
+		89FAC06D247F5D3000D1C269 /* AddBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC06C247F5D3000D1C269 /* AddBoardCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E00A18B24723EA500C1AA2B /* BingoYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingoYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E00A18E24723EA500C1AA2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E00A19024723EA500C1AA2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7E00A19224723EA500C1AA2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E00A19524723EA500C1AA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E00A19824723EA500C1AA2B /* BingoYa.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BingoYa.xcdatamodel; sourceTree = "<group>"; };
 		7E00A19A24723EA600C1AA2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +59,11 @@
 		897A7532247E107C00C05F78 /* CreateBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateBoard.storyboard; sourceTree = "<group>"; };
 		89E4301E24724A7E006CE21E /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		89E4302024724B2A006CE21E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		89FAC064247F3EF400D1C269 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		89FAC066247F44F000D1C269 /* RewardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewController.swift; sourceTree = "<group>"; };
+		89FAC068247F4BDC00D1C269 /* BoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		89FAC06A247F4E3C00D1C269 /* BoardTIle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTIle.swift; sourceTree = "<group>"; };
+		89FAC06C247F5D3000D1C269 /* AddBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoardCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				7E6BEAC4247E2FDF009A7D51 /* BingoTile.swift */,
+				89FAC06A247F4E3C00D1C269 /* BoardTIle.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -112,8 +121,8 @@
 		897A752E247E0BF600C05F78 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7E00A19424723EA500C1AA2B /* Main.storyboard */,
 				89E4301E24724A7E006CE21E /* Onboarding.storyboard */,
+				7E00A19424723EA500C1AA2B /* Main.storyboard */,
 				897A7532247E107C00C05F78 /* CreateBoard.storyboard */,
 				897A7530247E106A00C05F78 /* Reward.storyboard */,
 				7E6BEABA247E1AA1009A7D51 /* Detail.storyboard */,
@@ -124,17 +133,20 @@
 		897A752F247E0BFB00C05F78 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				7E00A19224723EA500C1AA2B /* ViewController.swift */,
 				89E4302024724B2A006CE21E /* OnboardingViewController.swift */,
+				89FAC064247F3EF400D1C269 /* MainViewController.swift */,
+				89FAC068247F4BDC00D1C269 /* BoardCollectionViewCell.swift */,
+				89FAC06C247F5D3000D1C269 /* AddBoardCollectionViewCell.swift */,
+				897A7520247DEBE800C05F78 /* MainCollectionViewController.swift */,
 				7EEEA9EE247CB4FA002FC55C /* DetailViewController.swift */,
 				7EEEA9F0247CCD42002FC55C /* TakeImageViewController.swift */,
 				7EEEA9F2247CD31B002FC55C /* BingoCollectionViewCell.swift */,
-				897A7520247DEBE800C05F78 /* MainCollectionViewController.swift */,
+				7E6BEABC247E1B4E009A7D51 /* ShareBingoViewController.swift */,
 				897A7522247DF8B400C05F78 /* CreateBoardTableViewController.swift */,
 				897A7524247DF90500C05F78 /* ColorTableViewController.swift */,
 				897A7526247DF91200C05F78 /* CategoryTableViewController.swift */,
 				897A7528247DF91E00C05F78 /* DurationTableViewController.swift */,
-				7E6BEABC247E1B4E009A7D51 /* ShareBingoViewController.swift */,
+				89FAC066247F44F000D1C269 /* RewardTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,16 +227,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				897A7523247DF8B400C05F78 /* CreateBoardTableViewController.swift in Sources */,
-				7E00A19324723EA500C1AA2B /* ViewController.swift in Sources */,
 				7E00A19924723EA500C1AA2B /* BingoYa.xcdatamodeld in Sources */,
+				89FAC06B247F4E3C00D1C269 /* BoardTIle.swift in Sources */,
 				89E4302124724B2A006CE21E /* OnboardingViewController.swift in Sources */,
 				7EEEA9EF247CB4FA002FC55C /* DetailViewController.swift in Sources */,
 				897A7521247DEBE800C05F78 /* MainCollectionViewController.swift in Sources */,
 				7E00A18F24723EA500C1AA2B /* AppDelegate.swift in Sources */,
+				89FAC067247F44F000D1C269 /* RewardTableViewController.swift in Sources */,
 				7E6BEAC5247E2FDF009A7D51 /* BingoTile.swift in Sources */,
 				897A7529247DF91E00C05F78 /* DurationTableViewController.swift in Sources */,
 				7E6BEABD247E1B4E009A7D51 /* ShareBingoViewController.swift in Sources */,
+				89FAC065247F3EF400D1C269 /* MainViewController.swift in Sources */,
+				89FAC069247F4BDC00D1C269 /* BoardCollectionViewCell.swift in Sources */,
 				7EEEA9F1247CCD42002FC55C /* TakeImageViewController.swift in Sources */,
+				89FAC06D247F5D3000D1C269 /* AddBoardCollectionViewCell.swift in Sources */,
 				7EEEA9F3247CD31B002FC55C /* BingoCollectionViewCell.swift in Sources */,
 				897A7525247DF90500C05F78 /* ColorTableViewController.swift in Sources */,
 				7E00A19124723EA500C1AA2B /* SceneDelegate.swift in Sources */,
