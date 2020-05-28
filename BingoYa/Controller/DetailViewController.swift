@@ -44,6 +44,9 @@ class DetailViewController: UIViewController {
             }
         }
     }
+    @IBAction func backToMain(_ sender: UIButton) {
+        navigationController?.popToRootViewController(animated: true)
+    }
     
     @IBAction func saveBingo(_ sender: UIButton) {
         takeScreenShot(of: bingoBoardCollectionView)
@@ -77,8 +80,15 @@ extension DetailViewController: UICollectionViewDelegate, UICollectionViewDataSo
             cell.taskLabel.text = task.name
             if task.image != nil {
                 cell.taskImageView.image = task.image
+                cell.taskLabel.isHidden = true
             } else {
                 cell.taskImageView.image = UIImage()
+                cell.taskLabel.isHidden = false
+            }
+            if indexPath.row % 2 == 0 {
+                cell.backgroundColor = #colorLiteral(red: 0.8666666667, green: 0.1725490196, blue: 0, alpha: 1)
+            } else {
+                cell.backgroundColor = #colorLiteral(red: 0.6980392157, green: 0.9215686275, blue: 0.9490196078, alpha: 1)
             }
             cell.layer.borderColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
             cell.layer.borderWidth = 1
