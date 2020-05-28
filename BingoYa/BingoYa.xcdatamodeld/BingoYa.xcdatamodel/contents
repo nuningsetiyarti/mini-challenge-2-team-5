@@ -1,4 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E287" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Activity" representedClassName="Activity" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="ofActivity" inverseEntity="Category"/>
+        <relationship name="ofBoardActivity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BoardActivity" inverseName="activity" inverseEntity="BoardActivity"/>
+    </entity>
+    <entity name="Board" representedClassName="Board" syncable="YES" codeGenerationType="class">
+        <attribute name="createdDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="expiryDate" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="color" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Color" inverseName="ofBoard" inverseEntity="Color"/>
+        <relationship name="ofBoardActivity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="BoardActivity" inverseName="board" inverseEntity="BoardActivity"/>
+    </entity>
+    <entity name="BoardActivity" representedClassName="BoardActivity" syncable="YES" codeGenerationType="class">
+        <attribute name="state" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="activity" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Activity" inverseName="ofBoardActivity" inverseEntity="Activity"/>
+        <relationship name="board" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Board" inverseName="ofBoardActivity" inverseEntity="Board"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="ofActivity" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="category" inverseEntity="Activity"/>
+        <relationship name="ofTrivia" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Trivia" inverseName="category" inverseEntity="Trivia"/>
+    </entity>
+    <entity name="Color" representedClassName="Color" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="ofBoard" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Board" inverseName="color" inverseEntity="Board"/>
+    </entity>
+    <entity name="Trivia" representedClassName="Trivia" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="status" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="ofTrivia" inverseEntity="Category"/>
+    </entity>
+    <elements>
+        <element name="Board" positionX="-9" positionY="36" width="128" height="148"/>
+        <element name="Color" positionX="-9" positionY="36" width="128" height="103"/>
+        <element name="Category" positionX="0" positionY="45" width="128" height="118"/>
+        <element name="Trivia" positionX="18" positionY="63" width="128" height="103"/>
+        <element name="Activity" positionX="36" positionY="81" width="128" height="118"/>
+        <element name="BoardActivity" positionX="54" positionY="99" width="128" height="103"/>
+    </elements>
 </model>
