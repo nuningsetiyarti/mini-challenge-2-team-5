@@ -12,6 +12,8 @@ class DetailViewController: UIViewController {
 
     @IBOutlet weak var saveBingoButton: UIButton!
     @IBOutlet weak var bingoBoardCollectionView: UICollectionView!
+    @IBOutlet weak var bingoTitleLabel: UILabel!
+    @IBOutlet weak var bingoDueDateLabel: UILabel!
     
     var bingoTile: [BingoTile] = [
         BingoTile(name: "Make a cup of coffee", image: nil),
