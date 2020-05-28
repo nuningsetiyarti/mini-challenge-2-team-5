@@ -29,14 +29,16 @@
 		89E4301F24724A7E006CE21E /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E4301E24724A7E006CE21E /* Onboarding.storyboard */; };
 		89E4302124724B2A006CE21E /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E4302024724B2A006CE21E /* OnboardingViewController.swift */; };
 		89FAC065247F3EF400D1C269 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC064247F3EF400D1C269 /* MainViewController.swift */; };
-		89FAC067247F44F000D1C269 /* RewardTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC066247F44F000D1C269 /* RewardTableViewController.swift */; };
 		89FAC069247F4BDC00D1C269 /* BoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC068247F4BDC00D1C269 /* BoardCollectionViewCell.swift */; };
 		89FAC06B247F4E3C00D1C269 /* BoardTIle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC06A247F4E3C00D1C269 /* BoardTIle.swift */; };
 		89FAC06D247F5D3000D1C269 /* AddBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC06C247F5D3000D1C269 /* AddBoardCollectionViewCell.swift */; };
+		89FAC06F248035CF00D1C269 /* RewardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC06E248035CF00D1C269 /* RewardViewController.swift */; };
+		89FAC071248036FE00D1C269 /* RewardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC070248036FE00D1C269 /* RewardRow.swift */; };
+		89FAC0732480387C00D1C269 /* RewardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FAC0722480387C00D1C269 /* RewardTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E00A18B24723EA500C1AA2B /* BingoYa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BingoYa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E00A18B24723EA500C1AA2B /* BingoYa!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BingoYa!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E00A18E24723EA500C1AA2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E00A19024723EA500C1AA2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E00A19524723EA500C1AA2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,10 +62,12 @@
 		89E4301E24724A7E006CE21E /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		89E4302024724B2A006CE21E /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		89FAC064247F3EF400D1C269 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		89FAC066247F44F000D1C269 /* RewardTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewController.swift; sourceTree = "<group>"; };
 		89FAC068247F4BDC00D1C269 /* BoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardCollectionViewCell.swift; sourceTree = "<group>"; };
 		89FAC06A247F4E3C00D1C269 /* BoardTIle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardTIle.swift; sourceTree = "<group>"; };
 		89FAC06C247F5D3000D1C269 /* AddBoardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		89FAC06E248035CF00D1C269 /* RewardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardViewController.swift; sourceTree = "<group>"; };
+		89FAC070248036FE00D1C269 /* RewardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardRow.swift; sourceTree = "<group>"; };
+		89FAC0722480387C00D1C269 /* RewardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +92,7 @@
 		7E00A18C24723EA500C1AA2B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7E00A18B24723EA500C1AA2B /* BingoYa.app */,
+				7E00A18B24723EA500C1AA2B /* BingoYa!.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +118,7 @@
 			children = (
 				7E6BEAC4247E2FDF009A7D51 /* BingoTile.swift */,
 				89FAC06A247F4E3C00D1C269 /* BoardTIle.swift */,
+				89FAC070248036FE00D1C269 /* RewardRow.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -146,7 +151,8 @@
 				897A7524247DF90500C05F78 /* ColorTableViewController.swift */,
 				897A7526247DF91200C05F78 /* CategoryTableViewController.swift */,
 				897A7528247DF91E00C05F78 /* DurationTableViewController.swift */,
-				89FAC066247F44F000D1C269 /* RewardTableViewController.swift */,
+				89FAC06E248035CF00D1C269 /* RewardViewController.swift */,
+				89FAC0722480387C00D1C269 /* RewardTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,7 +174,7 @@
 			);
 			name = BingoYa;
 			productName = BingoYa;
-			productReference = 7E00A18B24723EA500C1AA2B /* BingoYa.app */;
+			productReference = 7E00A18B24723EA500C1AA2B /* BingoYa!.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -231,12 +237,13 @@
 				89FAC06B247F4E3C00D1C269 /* BoardTIle.swift in Sources */,
 				89E4302124724B2A006CE21E /* OnboardingViewController.swift in Sources */,
 				7EEEA9EF247CB4FA002FC55C /* DetailViewController.swift in Sources */,
+				89FAC06F248035CF00D1C269 /* RewardViewController.swift in Sources */,
 				897A7521247DEBE800C05F78 /* MainCollectionViewController.swift in Sources */,
 				7E00A18F24723EA500C1AA2B /* AppDelegate.swift in Sources */,
-				89FAC067247F44F000D1C269 /* RewardTableViewController.swift in Sources */,
 				7E6BEAC5247E2FDF009A7D51 /* BingoTile.swift in Sources */,
 				897A7529247DF91E00C05F78 /* DurationTableViewController.swift in Sources */,
 				7E6BEABD247E1B4E009A7D51 /* ShareBingoViewController.swift in Sources */,
+				89FAC0732480387C00D1C269 /* RewardTableViewCell.swift in Sources */,
 				89FAC065247F3EF400D1C269 /* MainViewController.swift in Sources */,
 				89FAC069247F4BDC00D1C269 /* BoardCollectionViewCell.swift in Sources */,
 				7EEEA9F1247CCD42002FC55C /* TakeImageViewController.swift in Sources */,
@@ -244,6 +251,7 @@
 				7EEEA9F3247CD31B002FC55C /* BingoCollectionViewCell.swift in Sources */,
 				897A7525247DF90500C05F78 /* ColorTableViewController.swift in Sources */,
 				7E00A19124723EA500C1AA2B /* SceneDelegate.swift in Sources */,
+				89FAC071248036FE00D1C269 /* RewardRow.swift in Sources */,
 				897A7527247DF91200C05F78 /* CategoryTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -396,7 +404,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.ada.BingoYa;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BingoYa!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -414,7 +422,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.ada.BingoYa;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "BingoYa!";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

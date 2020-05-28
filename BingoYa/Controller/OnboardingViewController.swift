@@ -11,12 +11,14 @@ import UIKit
 class OnboardingViewController: UIViewController {
 
     @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var sectionView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setCustomButton(continueButton)
+        sectionView.layer.cornerRadius = 15.0
     }
     
     // MARK: Setup Gradient Background Color
